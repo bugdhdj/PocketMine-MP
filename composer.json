@@ -16,7 +16,6 @@
       "ext-openssl": "*",
       "ext-pcre": "*",
       "ext-phar": "*",
-      "ext-pthreads": "~3.2.0",
       "ext-reflection": "*",
       "ext-simplexml": "*",
       "ext-sockets": "*",
@@ -38,6 +37,7 @@
       "pocketmine/spl": "^0.4.0"
    },
    "require-dev": {
+      "eaglewu/swoole-ide-helper": "dev-master",
       "phpstan/phpstan": "0.12.92",
       "phpstan/phpstan-phpunit": "^0.12.6",
       "phpstan/phpstan-strict-rules": "^0.12.2",

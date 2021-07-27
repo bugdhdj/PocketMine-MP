@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79b082334bd3930d7eef49be9b70e59f",
+    "content-hash": "d9b1049f5529ef43c756a5e64125aa6d",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -556,6 +556,54 @@
                 }
             ],
             "time": "2020-11-10T18:47:58+00:00"
+        },
+        {
+            "name": "eaglewu/swoole-ide-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wudi/swoole-ide-helper.git",
+                "reference": "70147a030c2dd5c1171bedae3a31970f3bf9c280"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wudi/swoole-ide-helper/zipball/70147a030c2dd5c1171bedae3a31970f3bf9c280",
+                "reference": "70147a030c2dd5c1171bedae3a31970f3bf9c280",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "eagle",
+                    "email": "eaglewudi@gmail.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "Swoole IDE Helper, to improve auto-completion",
+            "keywords": [
+                "autocomplete",
+                "codeintel",
+                "helper",
+                "ide",
+                "netbeans",
+                "phpdoc",
+                "phpstorm",
+                "sublime",
+                "swoole"
+            ],
+            "support": {
+                "issues": "https://github.com/wudi/swoole-ide-helper/issues",
+                "source": "https://github.com/wudi/swoole-ide-helper/tree/master"
+            },
+            "time": "2021-06-02T17:13:45+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2750,7 +2798,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "eaglewu/swoole-ide-helper": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
@@ -2765,7 +2815,6 @@
         "ext-openssl": "*",
         "ext-pcre": "*",
         "ext-phar": "*",
-        "ext-pthreads": "~3.2.0",
         "ext-reflection": "*",
         "ext-simplexml": "*",
         "ext-sockets": "*",
@@ -2779,5 +2828,5 @@
     "platform-overrides": {
         "php": "7.4.0"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
