@@ -85,7 +85,6 @@ class ThreadManager extends \Volatile{
 
 	public function stopAll() : int{
 		$logger = MainLogger::getLogger();
-
 		$erroredThreads = 0;
 
 		foreach($this->getAll() as $thread){

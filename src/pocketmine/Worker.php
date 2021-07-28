@@ -78,7 +78,8 @@ abstract class Worker extends \Worker{
 	/**
 	 * @return bool
 	 */
-	public function start(int $options = PTHREADS_INHERIT_ALL){
+	public function start(int $options = PTHREADS_INHERIT_ALL):bool{
+		parent::__construct();
 		ThreadManager::getInstance()->add($this);
 
 		if($this->getClassLoader() === null){

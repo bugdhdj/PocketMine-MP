@@ -168,8 +168,8 @@ class CommandReader extends Thread{
 		$this->registerClassLoader();
 		$this->initStdin();
 
-		while(!$this->shutdown and $this->readLine());
 
+		while(!$this->shutdown and $this->readLine());
 		fclose(self::$stdin);
 	}
 

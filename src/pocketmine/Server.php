@@ -1413,6 +1413,7 @@ class Server{
 
 			$consoleNotifier = new SleeperNotifier();
 			$this->console = new CommandReader($consoleNotifier);
+
 			$this->tickSleeper->addNotifier($consoleNotifier, function() use ($consoleSender) : void{
 				Timings::$serverCommandTimer->startTiming();
 				while(($line = $this->console->getLine()) !== null){
@@ -1424,6 +1425,7 @@ class Server{
 				}
 				Timings::$serverCommandTimer->stopTiming();
 			});
+
 			$this->console->start(PTHREADS_INHERIT_NONE);
 
 			if($this->getConfigBool("enable-rcon", false)){
