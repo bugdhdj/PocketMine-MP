@@ -77,7 +77,7 @@ abstract class AsyncTask extends Collectable{
 	/**
 	 * @return void
 	 */
-	public function run(){
+	public function run():void{
 		$this->result = null;
 
 		if(!$this->cancelRun){

@@ -52,7 +52,7 @@ class AsyncWorker extends Worker{
 	/**
 	 * @return void
 	 */
-	public function run(){
+	public function run():void{
 		error_reporting(-1);
 
 		$this->registerClassLoader();

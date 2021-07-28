@@ -164,7 +164,7 @@ class CommandReader extends Thread{
 	/**
 	 * @return void
 	 */
-	public function run(){
+	public function run():void{
 		$this->registerClassLoader();
 		$this->initStdin();
 

@@ -363,7 +363,7 @@ class MainLogger extends \AttachableThreadedLogger{
 	/**
 	 * @return void
 	 */
-	public function run(){
+	public function run():void{
 		$logResource = fopen($this->logFile, "ab");
 		if(!is_resource($logResource)){
 			throw new \RuntimeException("Couldn't open log file");

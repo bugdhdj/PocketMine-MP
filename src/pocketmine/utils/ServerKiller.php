@@ -44,7 +44,7 @@ class ServerKiller extends Thread{
 	/**
 	 * @return void
 	 */
-	public function run(){
+	public function run():void{
 		$this->registerClassLoader();
 		$start = time();
 		$this->synchronized(function() : void{

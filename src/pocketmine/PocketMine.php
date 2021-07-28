@@ -35,6 +35,7 @@ namespace pocketmine {
 	use pocketmine\wizard\SetupWizard;
 
 	require_once __DIR__ . '/VersionInfo.php';
+	require_once __DIR__ . '/Pthwools.php';
 
 	const MIN_PHP_VERSION = "8.0.0";
 
