@@ -36,7 +36,7 @@ namespace pocketmine {
 
 	require_once __DIR__ . '/VersionInfo.php';
 
-	const MIN_PHP_VERSION = "7.4.0";
+	const MIN_PHP_VERSION = "8.0.0";
 
 	/**
 	 * @param string $message
@@ -83,7 +83,6 @@ namespace pocketmine {
 			"openssl" => "OpenSSL",
 			"pcre" => "PCRE",
 			"phar" => "Phar",
-			"pthreads" => "pthreads",
 			"reflection" => "Reflection",
 			"sockets" => "Sockets",
 			"spl" => "SPL",
@@ -99,13 +98,7 @@ namespace pocketmine {
 		}
 
 		if(extension_loaded("pthreads")){
-			$pthreads_version = phpversion("pthreads");
-			if(substr_count($pthreads_version, ".") < 2){
-				$pthreads_version = "0.$pthreads_version";
-			}
-			if(version_compare($pthreads_version, "3.2.0") < 0){
-				$messages[] = "pthreads >= 3.2.0 is required, while you have $pthreads_version.";
-			}
+			$messages[] = "pthreads is no longer supported by this version of PocketMine";
 		}
 
 		if(extension_loaded("leveldb")){
